@@ -3,11 +3,11 @@
 # for the sake of energy analysis
 
 # Diffie-Hellman key exchange with RSA
-def DHE-RSA():
+def DHERSA():
     print("")
 
 # Diffie-Hellman key exchange with pre exchanged key 
-def DHA-PSK():
+def DHAPSK():
     print("")
     
     

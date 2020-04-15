@@ -1,6 +1,6 @@
 # This file will run the various Bluetooth connection methods
 # and analyize their power consumption, comparing and printing results
-from KeyExchanges import DHE-RSA, DHA-PSK
+from KeyExchanges import DHERSA, DHAPSK
 from CipherMethods import AES, ChaCha20
 #import energyusage
 
