@@ -1,14 +1,13 @@
 import socket
 import ssl
 
+# Bluetooth server information
 serverBluetoothMAC = "00:C2:C6:6F:B6:15"
 port = 20
 
 bsock = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 
-ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
-ssl_context.set_ciphers("DHE-RSA-AES256-GCM-SHA384")
-c = ssl_context.get_ciphers()
+ssl_context = getSSLContext_client(DHERSA_AES256)
 ssl_bsock_wrapped = ssl_context.wrap_socket(bsock, server_hostname=serverBluetoothMAC)
 
 ssl_bsock_wrapped.connect((serverBluetoothMAC, port))
