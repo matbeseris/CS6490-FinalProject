@@ -7,7 +7,7 @@ def main():
 
 def test():
     a = -0
-    while(a < 200000000):
+    while(a < 2000000):
         a += 1
     
     

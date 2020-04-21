@@ -29,6 +29,7 @@ def main():
     print("*** Result energy ratings (higher = more energy used) *** ")
     while(i < len(msOutput)):
         print(sys.argv[i+1] + ":\t " + msOutput[i])
+	i+=1
     
 
 if __name__ == '__main__':
