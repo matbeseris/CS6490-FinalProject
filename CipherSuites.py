@@ -1,5 +1,6 @@
 # This file contains the main TLS cipher suits whose energy use will be analyzed
 import ssl
+
 from enum import Enum
 
 ######

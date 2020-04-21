@@ -1,5 +1,6 @@
 import socket
 import ssl
+
 from CipherSuites import *
 from helpers import *
 
@@ -88,7 +89,7 @@ def downloadFile(bsock):
             # receive all data from the file and write it to the copy
             bytesDownloaded = 0
             while bytesDownloaded < filesz:
-                data = recvMessage(bsock, msglen=filesz)
+                data = recvMessage(bsock)
             
                 if ErrorMessages.isErrorMessage(data):
                     print("Error message recieved: " + str(data))
