@@ -43,4 +43,3 @@ def getSSLContext_client():
     ssl_context.set_ciphers(suites[:-1]) # omit the last :
     
     return ssl_context
-    
