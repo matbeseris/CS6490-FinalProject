@@ -8,8 +8,8 @@ from enum import Enum
 class CipherSuites(Enum):
     DHERSA_AES256 = "DHE-RSA-AES256-GCM-SHA384"
     DHERSA_CHACHA20 = "DHE-RSA-CHACHA20-POLY1305"
-    DHEPSK_AES256 = "DHE-PSK-AES256-GCM-SHA384"
-    DHEPSK_CHACHA20 = "DHE-PSK-CHACHA20-POLY1305"
+    ECDHERSA_AES256 = "ECDHE-RSA-AES256-GCM-SHA384"
+    ECDHERSA_CHACHA20 = "ECDHE-RSA-CHACHA20-POLY1305"
 
 ######
 # Create a TLS 1.2 context for the given cipher suite
@@ -23,9 +23,9 @@ def getSSLContext_server(ciphers):
         ssl_context.load_cert_chain(certfile="cert.pem", keyfile="cert.pem") # load serve certificate and private key
         ssl_context.load_dh_params("dhparams.pem") # load the parameters for Diffie-Hellman
 
-    if ciphers == CipherSuites.DHEPSK_AES256 or ciphers == CipherSuites.DHEPSK_CHACHA20:
+    if ciphers == CipherSuites.ECDHERSA_AES256 or ciphers == CipherSuites.ECDHERSA_CHACHA20:
         ssl_context.load_cert_chain(certfile="cert.pem", keyfile="cert.pem") # load serve certificate and private key
-        ssl_context.load_dh_params("dhparams.pem") # load the parameters for Diffie-Hellman
+        #ssl_context.set_ecdh_curve("prime256v1") # can optionally use a named curve
 
     return ssl_context
 

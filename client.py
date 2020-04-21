@@ -66,20 +66,39 @@ def downloadFile(bsock):
     if ack != b"ACK":
         return -1
 
-    ##### NEED A FILE NAME INSERTED HERE ################
-    sendMessage(bytes("", "UTF-8"), bsock)
+    # request a file
+    print("Requesting mobydick.txt from the server")
+    sendMessage(bytes("mobydick.txt", "UTF-8"), bsock)
+    
+    # get the file size from the server
+    filesz = recvMessage(bsock)
+    
+    if ErrorMessages.isErrorMessage(filesz):
+        print("Error message recieved: " + str(filesz))
+        return
+        
+    filesz = int.from_bytes(filesz, byteorder="big")
+    print("File size: " + str(filesz))
+    
+    sendMessage(b"ACK", bsock)
 
     try:
         # Open file for reading in binary
         with open("copy.txt", "wb+") as fileCopy:
-        # read all data from the file and send it
-            data = recvMessage(bsock)
+            # receive all data from the file and write it to the copy
+            bytesDownloaded = 0
+            while bytesDownloaded < filesz:
+                data = recvMessage(bsock, msglen=filesz)
             
-            if ErrorMessages.isErrorMessage(fileName):
-                print("Error message recieved: " + str(fileName))
-                return
+                if ErrorMessages.isErrorMessage(data):
+                    print("Error message recieved: " + str(data))
+                    return
             
-            fileCopy.write(data)
+                fileCopy.write(data)
+                bytesDownloaded += len(data)
+                print("Downloaded: " + str(bytesDownloaded) + "/" + str(filesz))
+                
+                sendMessage(b"ACK", bsock)
     except (OSError, IOError):
         print("Error: problem writing to the file.")
         sendMessage(ErrorMessages.FILE_ERROR.value, bsock)
@@ -87,7 +106,7 @@ def downloadFile(bsock):
 
     sendMessage(b"ACK", bsock)
 
-    print("File recieved successfullyrecvMessage")
+    print("File recieved successfully")
 
 ######
 # Handle the Bluetooth connection
@@ -108,4 +127,4 @@ def connectionHandler(mac, port, mode):
     ssl_bsock.close()
     
 if __name__ == "__main__":
-    connectionHandler(serverBluetoothMAC, port, ServerModes.ECHO)
+    connectionHandler(serverBluetoothMAC, port, ServerModes.FILE_DOWNLOAD)

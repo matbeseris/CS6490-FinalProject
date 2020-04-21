@@ -1,6 +1,9 @@
 import socket
 import ssl
+import os
+
 from CipherSuites import *
+from helpers import *
 
 # my bluetooth adapter MAC address
 bluetoothMAC = "00:C2:C6:6F:B6:15"
@@ -44,16 +47,47 @@ def sendFile(bsock):
         return
 
     fileName = fileName.decode("UTF-8")
-
+    print("Attempting to send " + fileName)
+    
     try:
         # Open file for reading in binary
         with open(fileName, "rb") as fileData:
             # read all data from the file and send it
-            data = fileData.read()
-            sendMessage(data, bsock)
+            #data = fileData.read()
+            fileData.seek(0, os.SEEK_END)
+            filesz = fileData.tell().to_bytes(64, byteorder="big")
+            # send length of file so client know what to expect
+            sendMessage(filesz, bsock)
+            fileData.seek(0)
+            
+            # get ACK from client
+            ack = recvMessage(bsock)
 
-    except (OSError, IOError):
-        print("Error: problem writing to the file.")
+            if ErrorMessages.isErrorMessage(ack):
+                print("Error message recieved: " + str(ack))
+                return
+            elif ack != b"ACK":
+                print("Error ACK not recieved: " + str(ack))
+                return
+
+            data = fileData.read((2**16)-1)
+            while data != b"":
+                sendMessage(data, bsock)
+
+                # get ACK from client
+                ack = recvMessage(bsock)
+
+                if ErrorMessages.isErrorMessage(ack):
+                    print("Error message recieved: " + str(ack))
+                    return
+                elif ack != b"ACK":
+                    print("Error ACK not recieved: " + str(ack))
+                    return
+
+                data = fileData.read((2**16)-1)
+
+    except (OSError, IOError) as emsg:
+        print("Error: problem reading from file ({0}): {1}".format(emsg.errno, emsg.strerror))
         sendMessage(ErrorMessages.FILE_ERROR.value, bsock)
         return
 
@@ -102,7 +136,7 @@ def startServer(mac, port, ciphers):
             str(ssl_client_wrapped.cipher()))
     
         clientHandler(ssl_client_wrapped)
-    except (socket.error, ssl.SSLEror) as emsg:
+    except (socket.error, ssl.SSLError) as emsg:
         print("Error communicating with client ({0}): {1}".format(emsg.errno, emsg.strerror))
         print("Closing socket")
         if ssl_client_wrapped:
@@ -112,4 +146,4 @@ def startServer(mac, port, ciphers):
         bsock.close()
         
 if __name__ == "__main__":
-    startServer(bluetoothMAC, port, CipherSuites.DHERSA_AES256)
+    startServer(bluetoothMAC, port, CipherSuites.ECDHERSA_AES256)
