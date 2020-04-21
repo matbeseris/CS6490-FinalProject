@@ -1,13 +1,13 @@
 # HEader:
 # PID    COMMAND          %CPU TIME     #TH   #WQ #PORTS MEM   PURG  CMPRS PGRP  PPID  STATE    BOOSTS     %CPU_ME %CPU_OTHRS UID FAULTS   COW     MSGSENT   MSGRECV   SYSBSD    SYSMACH   CSW       PAGEINS IDLEW   POWER INSTRS CYCLES USER               #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
-import energyusage
+# import energyusage
 
 def main():
-    energyusage.evaluate(test)
+    test()
 
 def test():
     a = -0
-    while(a < 200):
+    while(a < 20000000):
         a += 1
     
     
