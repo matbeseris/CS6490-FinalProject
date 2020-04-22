@@ -1,0 +1,1 @@
+  0.9 ms/s; 19.6;;; 24.4;Process;[PID 7006] python3
