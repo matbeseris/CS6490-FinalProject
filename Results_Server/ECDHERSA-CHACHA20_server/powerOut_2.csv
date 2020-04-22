@@ -1,0 +1,659 @@
+____________________________________________________________________
+			P o w e r T O P
+
+____________________________________________________________________
+ *  *  *   System Information   *  *  *
+
+PowerTOP Version;v2.9 ran at Wed Apr 22 11:54:25 2020
+
+Kernel Version;Linux version 5.3.0-46-generic
+System Name;LENOVOVIQY0Y1Lenovo IdeaPad Y410P
+CPU Information;8 Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz
+OS Information;Ubuntu 19.10
+
+Target: 1 units/s;System:  2052.7 wakeup/s;CPU:  26.7% usage;GPU: 0 ops/s;GFX: 135.3 wakeups/s;VFS: 0 ops/s;
+
+____________________________________________________________________
+ *  *  *   Top 10 Power Consumers   *  *  *
+
+Usage;Events/s;Category;Description
+  6.0%;688.4;Process;[PID 3876] tilix 
+  0.5%;357.5;Timer;tick_sched_timer
+  1.8%;274.1;Interrupt;[27] xhci_hcd
+  4.3%;234.2;Process;[PID 1980] budgie-wm 
+  0.3%;142.7;kWork;hci_rx_work
+  0.3%; 47.9;kWork;hci_tx_work
+  5.2%; 22.4;Process;[PID 1094] /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch 
+  0.1%; 37.4;Process;[PID 11] [rcu_sched]
+  2.1%; 22.4;kWork;intel_atomic_commit_work
+  0.2%; 27.8;Interrupt;[32] i915
+
+____________________________________________________________________
+ *  *  *   Processor Idle State Report   *  *  *
+
+Package;0
+C2 (pc2); 69.4%
+C3 (pc3);  0.0%
+C6 (pc6);  0.0%
+C7 (pc7);  0.0%
+;
+;
+;
+
+;Core 0
+C3 (cc3);  0.7%
+C6 (cc6);  0.4%
+C7 (cc7); 87.6%
+;Core 1
+C3 (cc3);  0.6%
+C6 (cc6);  0.5%
+C7 (cc7); 91.2%
+;Core 2
+C3 (cc3);  0.5%
+C6 (cc6);  0.5%
+C7 (cc7); 91.5%
+;Core 3
+C3 (cc3);  8.3%
+C6 (cc6);  3.8%
+C7 (cc7); 70.9%
+
+CPU;0;CPU;1
+C0 active;  1.8%;  1.9%;
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1E;  0.2%;   0.3 ms;  0.0%;   0.0 ms
+;
+C3;  0.7%;   0.3 ms;  0.3%;   0.3 ms
+C6;  0.4%;   0.6 ms;  0.1%;   0.5 ms
+C7s; 93.8%;   3.0 ms; 94.8%;   5.3 ms
+CPU;2;CPU;3
+C0 active;  1.7%;  0.5%;
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1E;  0.2%;   0.3 ms;  0.1%;   0.3 ms
+;
+C3;  0.6%;   0.3 ms;  0.1%;   0.3 ms
+C6;  0.5%;   0.6 ms;  0.1%;   0.5 ms
+C7s; 94.1%;   3.3 ms; 98.3%;   8.0 ms
+CPU;4;CPU;5
+C0 active;  1.5%;  0.7%;
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1E;  0.1%;   0.3 ms;  0.1%;   1.1 ms
+;
+C3;  0.5%;   0.3 ms;  0.2%;   0.4 ms
+C6;  0.5%;   0.7 ms;  0.1%;   0.7 ms
+C7s; 94.9%;   3.5 ms; 97.7%;   8.2 ms
+CPU;6;CPU;7
+C0 active;  2.9%;  1.7%;
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1E;  0.1%;   0.0 ms;  0.0%;   0.0 ms
+;
+C3;  9.6%;   0.4 ms;  0.3%;   0.4 ms
+C6;  4.4%;   0.6 ms;  0.2%;   0.7 ms
+C7s; 77.6%;   1.3 ms; 94.7%;   5.0 ms
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+
+____________________________________________________________________
+ *  *  *   Processor Frequency Report   *  *  *
+
+Package;0
+Idle;
+3.40 GHz;
+1400 MHz;
+1.71 GHz;
+1.60 GHz;
+2.21 GHz;
+2.90 GHz;
+1.80 GHz;
+1.91 GHz;
+2.31 GHz;
+1500 MHz;
+1100 MHz;
+1300 MHz;
+1200 MHz;
+1000 MHz;
+ 900 MHz;
+ 800 MHz;
+2.10 GHz;
+2.00 GHz;
+2.60 GHz;
+;
+;
+;
+
+;Core 0
+Idle;
+3.40 GHz;
+1400 MHz;
+1.71 GHz;
+1.60 GHz;
+2.21 GHz;
+2.90 GHz;
+1.80 GHz;
+1.91 GHz;
+2.31 GHz;
+1500 MHz;
+1100 MHz;
+1300 MHz;
+1200 MHz;
+1000 MHz;
+ 900 MHz;
+ 800 MHz;
+2.10 GHz;
+2.00 GHz;
+2.60 GHz;
+;Core 1
+Idle;
+3.40 GHz;
+1400 MHz;
+1.60 GHz;
+2.21 GHz;
+2.90 GHz;
+1.80 GHz;
+1.91 GHz;
+1.71 GHz;
+2.31 GHz;
+1500 MHz;
+1300 MHz;
+1100 MHz;
+1200 MHz;
+1000 MHz;
+ 900 MHz;
+ 800 MHz;
+2.10 GHz;
+2.00 GHz;
+2.60 GHz;
+;Core 2
+Idle;
+3.40 GHz;
+1400 MHz;
+1.71 GHz;
+2.21 GHz;
+2.90 GHz;
+1.80 GHz;
+1.91 GHz;
+2.31 GHz;
+1500 MHz;
+1100 MHz;
+1300 MHz;
+1000 MHz;
+1200 MHz;
+ 900 MHz;
+ 800 MHz;
+1.60 GHz;
+2.10 GHz;
+2.00 GHz;
+2.60 GHz;
+;Core 3
+Idle;
+3.40 GHz;
+1400 MHz;
+1.60 GHz;
+2.21 GHz;
+2.90 GHz;
+1.80 GHz;
+1.91 GHz;
+1.71 GHz;
+2.31 GHz;
+1500 MHz;
+1300 MHz;
+1200 MHz;
+1100 MHz;
+1000 MHz;
+ 900 MHz;
+ 800 MHz;
+2.10 GHz;
+2.00 GHz;
+2.60 GHz;
+
+CPU 0;CPU 1
+Average;   876 MHz;   979 MHz
+Idle;
+3.40 GHz;
+2.90 GHz;
+1.80 GHz;
+1.91 GHz;
+2.31 GHz;
+1500 MHz;
+1100 MHz;
+1300 MHz;
+1000 MHz;
+1200 MHz;
+ 900 MHz;
+ 800 MHz;
+1400 MHz;
+1.60 GHz;
+2.10 GHz;
+2.00 GHz;
+1.71 GHz;
+2.60 GHz;
+CPU 2;CPU 3
+Average;   888 MHz;   881 MHz
+Idle;
+3.40 GHz;
+1400 MHz;
+1.60 GHz;
+2.21 GHz;
+2.90 GHz;
+1.80 GHz;
+1.91 GHz;
+2.31 GHz;
+1500 MHz;
+1300 MHz;
+1100 MHz;
+1000 MHz;
+ 900 MHz;
+ 800 MHz;
+2.10 GHz;
+1200 MHz;
+2.00 GHz;
+1.71 GHz;
+2.60 GHz;
+CPU 4;CPU 5
+Average;   886 MHz;   867 MHz
+Idle;
+3.40 GHz;
+1400 MHz;
+1.71 GHz;
+2.21 GHz;
+2.90 GHz;
+1.80 GHz;
+1.91 GHz;
+2.31 GHz;
+1500 MHz;
+1100 MHz;
+1300 MHz;
+1000 MHz;
+1200 MHz;
+ 900 MHz;
+ 800 MHz;
+1.60 GHz;
+2.10 GHz;
+2.00 GHz;
+2.60 GHz;
+CPU 6;CPU 7
+Average;   862 MHz;   859 MHz
+Idle;
+3.40 GHz;
+1400 MHz;
+1.60 GHz;
+2.21 GHz;
+2.90 GHz;
+1.80 GHz;
+1.91 GHz;
+2.31 GHz;
+1500 MHz;
+1300 MHz;
+1200 MHz;
+1100 MHz;
+1000 MHz;
+ 900 MHz;
+ 800 MHz;
+2.10 GHz;
+2.00 GHz;
+1.71 GHz;
+;;
+;;
+;;
+;;
+
+____________________________________________________________________
+ *  *  *   Overview of Software Power Consumers   *  *  *
+
+Usage;Wakeups/s;GPU ops/s;Disk IO/s;GFX Wakeups/s;Category;Description
+ 60.0 ms/s;688.4;;; 21.1;Process;[PID 3876] tilix 
+  4.5 ms/s;357.5;;;;Timer;tick_sched_timer
+ 18.2 ms/s;274.1;;;;Interrupt;[27] xhci_hcd
+ 42.8 ms/s;234.2;;;110.9;Process;[PID 1980] budgie-wm 
+  3.1 ms/s;142.7;;;;kWork;hci_rx_work
+  3.1 ms/s; 47.9;;;;kWork;hci_tx_work
+ 51.8 ms/s; 22.4;;;;Process;[PID 1094] /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch 
+556.1 us/s; 37.4;;;;Process;[PID 11] [rcu_sched]
+ 21.5 ms/s; 22.4;;;;kWork;intel_atomic_commit_work
+  2.2 ms/s; 27.8;;;;Interrupt;[32] i915
+  6.0 ms/s; 23.4;;;;Interrupt;[7] sched(softirq)
+  0.8 ms/s; 23.4;;;;Process;[PID 592] [irq/30-iwlwifi]
+363.0 us/s; 22.5;;;;kWork;intel_atomic_cleanup_work
+ 76.8 us/s; 22.5;;;;kWork;intel_atomic_helper_free_state_
+  1.9 ms/s; 17.3;;;;Process;[PID 1303] [krfcommd]
+ 14.9 ms/s;  4.9;;;;Timer;hrtimer_wakeup
+  1.2 ms/s;  7.8;;;  1.7;Process;[PID 1993] budgie-panel 
+ 76.7 us/s;  8.4;;;;kWork;psi_avgs_work
+158.6 us/s;  7.7;;;;kWork;ieee80211_iface_work
+  2.9 ms/s;  4.8;;;  1.2;Process;[PID 4081] nemo 
+ 33.7 us/s;  5.9;;;;Process;[PID 1492] /usr/lib/snapd/snapd 
+  3.4 ms/s;  2.7;;;;Process;[PID 10290] python3
+  1.3 ms/s;  3.0;;;;Process;[PID 10261] powertop --workload=python3 server.py --csv=powerOut.csv 
+463.8 us/s;  2.7;;;;Process;[PID 1026] /usr/sbin/NetworkManager --no-daemon 
+  0.8 ms/s;  2.5;;;;Process;[PID 921] /usr/lib/bluetooth/bluetoothd 
+  5.9 ms/s; 0.20;;;;Process;[PID 3973] [kworker/u17:1]
+ 23.4 us/s;  2.5;;;;Timer;intel_uncore_fw_release_timer
+ 27.7 us/s;  2.2;;;;Timer;watchdog_timer_fn
+133.0 us/s;  1.8;;;;Interrupt;[31] nvkm
+ 58.1 us/s;  1.8;;;;kWork;iwl_bg_run_time_calib_work
+277.1 us/s;  1.6;;;  0.1;Process;[PID 2011] /usr/lib/budgie-desktop/plugins/budgie-showtime/showtime_desktop 
+ 24.3 us/s;  1.6;;;;Process;[PID 10] [ksoftirqd/0]
+127.6 us/s;  1.5;;;  0.1;Process;[PID 2059] budgie-daemon 
+394.2 us/s;  1.4;;;;Process;[PID 923] /usr/sbin/NetworkManager --no-daemon 
+141.4 us/s;  1.5;;;;Process;[PID 2073] plank 
+107.9 us/s;  1.2;;;;Process;[PID 2129] /usr/lib/x86_64-linux-gnu/bamf/bamfdaemon 
+ 14.4 us/s;  1.2;;;;kWork;blk_mq_requeue_work
+ 14.3 us/s;  1.2;;;;kWork;handle_update
+  1.4 ms/s;  0.6;;;;Interrupt;[1] timer(softirq)
+ 72.0 us/s;  1.1;;;;Interrupt;[4] block(softirq)
+  2.5 ms/s; 0.10;;;;Process;[PID 10290] sh
+  2.6 ms/s;;;;;Process;[PID 8382] [kworker/u17:3]
+522.1 us/s;  0.8;;;;Process;[PID 10291] systemd-udevd
+  4.5 us/s;  1.0;;;;Timer;sched_rt_period_timer
+102.5 us/s;  0.9;;;;Interrupt;[30] iwlwifi
+ 94.3 us/s;  0.9;;;;Process;[PID 310] [jbd2/sda10-8]
+124.1 us/s;  0.8;;;;kWork;__i915_gem_free_work
+293.8 us/s;  0.7;;;;kWork;delayed_fput
+ 22.7 us/s;  0.8;;;;kWork;iwl_pcie_rx_allocator_work
+ 19.5 us/s;  0.8;;;;kWork;vmstat_shepherd
+174.4 us/s;  0.6;;;;Process;[PID 1307] /usr/lib/upower/upowerd 
+  0.8 ms/s; 0.30;;;;Process;[PID 10294] oldtimer
+ 29.8 us/s;  0.6;;;;kWork;retire_work_handler
+ 76.3 us/s;  0.5;;;;kWork;i915_hangcheck_elapsed
+  7.7 us/s;  0.5;;;;kWork;flush_to_ldisc
+  0.0 us/s;  0.5;;;;kWork;disk_events_workfn
+  1.2 ms/s;;;;;Process;[PID 9800] [kworker/u16:1]
+ 82.3 us/s;  0.4;;;  0.2;Process;[PID 2075] nm-applet --no-indicator 
+ 10.0 us/s;  0.4;;;;Process;[PID 1261] /usr/libexec/rtkit-daemon 
+  0.8 ms/s; 0.10;;;;Process;[PID 1] /sbin/init splash 
+  0.9 ms/s;;;;;Process;[PID 10295] oldtimer
+163.6 us/s; 0.30;;;;Process;[PID 388] /lib/systemd/systemd-udevd 
+  0.9 ms/s;;;;;Process;[PID 10092] [kworker/u16:3]
+ 75.2 us/s; 0.30;;;;Process;[PID 1704] /usr/bin/pulseaudio --daemonize=no 
+  0.8 ms/s;;;;;Interrupt;[9] RCU(softirq)
+ 64.9 us/s; 0.30;;;;Process;[PID 1910] /usr/lib/gnome-settings-daemon/gsd-sharing 
+  0.8 ms/s;;;;;Process;[PID 9662] [kworker/u16:2]
+ 23.7 us/s; 0.30;;;;Process;[PID 10292] pool-NetworkMan
+  2.8 us/s; 0.30;;;;kWork;free_work
+  1.2 us/s; 0.30;;;;kWork;iwlagn_bt_traffic_change_work
+  1.1 us/s; 0.30;;;;kWork;blk_mq_timeout_work
+  0.0 us/s; 0.30;;;;kWork;iwl_bg_bt_runtime_config
+569.9 us/s;;;;;Process;[PID 918] /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+ 56.9 us/s; 0.20;;;;Process;[PID 10289] powertop
+ 48.8 us/s; 0.20;;;;Process;[PID 2110] nm-applet --no-indicator 
+ 27.7 us/s; 0.20;;;;Process;[PID 2651] /usr/bin/gnome-software --gapplication-service 
+528.5 us/s;;;;;Process;[PID 1679] /lib/systemd/systemd --user 
+ 21.8 us/s; 0.20;;;;Process;[PID 10288] powertop
+ 17.8 us/s; 0.20;;;;Process;[PID 2644] update-notifier 
+ 16.1 us/s; 0.20;;;;Process;[PID 1016] /usr/sbin/NetworkManager --no-daemon 
+ 15.4 us/s; 0.20;;;;Process;[PID 2115] nemo-desktop 
+ 14.3 us/s; 0.20;;;;Process;[PID 956] /usr/lib/accountsservice/accounts-daemon 
+ 11.6 us/s; 0.20;;;;Process;[PID 1922] /usr/lib/gnome-settings-daemon/gsd-xsettings 
+ 11.3 us/s; 0.20;;;;Process;[PID 10289] sh
+  2.5 us/s; 0.20;;;;Process;[PID 18] [ksoftirqd/1]
+  1.1 us/s; 0.20;;;;kWork;gen6_pm_rps_work
+420.8 us/s;;;;;Timer;process_timeout
+149.5 us/s; 0.10;;;;Process;[PID 1180] /usr/sbin/kerneloops 
+118.7 us/s; 0.10;;;;Process;[PID 8858] [kworker/6:2]
+ 62.7 us/s; 0.10;;;;Process;[PID 1495] /usr/lib/snapd/snapd 
+ 36.3 us/s; 0.10;;;;Process;[PID 914] /usr/sbin/irqbalance --foreground 
+ 12.4 us/s; 0.10;;;;Process;[PID 24] [ksoftirqd/2]
+  8.3 us/s; 0.10;;;;Process;[PID 1777] /usr/bin/ssh-agent /usr/bin/im-launch /usr/bin/budgie-desktop 
+  4.3 us/s; 0.10;;;;Process;[PID 10292] NetworkManager
+  3.4 us/s; 0.10;;;;kWork;wb_workfn
+  2.5 us/s; 0.10;;;;kWork;ieee80211_request_smps_mgd_work
+  0.8 us/s; 0.10;;;;kWork;iwl_bg_scan_completed
+  0.7 us/s; 0.10;;;;kWork;ieee80211_recalc_smps_work
+  0.4 us/s; 0.10;;;;kWork;hub_event
+  0.0 us/s; 0.10;;;;kWork;hcd_resume_work
+
+____________________________________________________________________
+ *  *  *   Device Power Report   *  *  *
+
+Usage;Device Name
+ 26.8%;CPU misc
+ 26.8%;DRAM
+ 26.8%;CPU core
+100.0%;Display backlight
+100.0%;Radio device: ideapad_acpi
+100.0%;PCI Device: Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode]
+100.0%;Radio device: btusb
+100.0%;Radio device: ideapad_acpi
+100.0%;Radio device: iwlwifi
+100.0%;PCI Device: Intel Corporation 8 Series/C220 Series Chipset Family USB xHCI
+100.0%;PCI Device: Intel Corporation 4th Gen Core Processor Integrated Graphics Controller
+100.0%;PCI Device: Intel Corporation 8 Series/C220 Series Chipset Family PCI Express Root Port #5
+100.0%;PCI Device: NVIDIA Corporation GK107 HDMI Audio Controller
+100.0%;PCI Device: Intel Corporation 8 Series/C220 Series Chipset Family USB EHCI #1
+100.0%;PCI Device: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor HD Audio Controller
+100.0%;PCI Device: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor DRAM Controller
+100.0%;PCI Device: Qualcomm Atheros QCA8171 Gigabit Ethernet
+100.0%;PCI Device: NVIDIA Corporation GK107M [GeForce GT 755M]
+100.0%;PCI Device: Intel Corporation 8 Series/C220 Series Chipset Family MEI Controller #1
+100.0%;PCI Device: Intel Corporation 8 Series/C220 Series Chipset Family USB EHCI #2
+100.0%;PCI Device: Intel Corporation Centrino Wireless-N 2230
+100.0%;PCI Device: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor PCI Express x16 Controller
+100.0%;PCI Device: Intel Corporation HM86 Express LPC Controller
+100.0%;PCI Device: Intel Corporation 8 Series/C220 Series Chipset High Definition Audio Controller
+100.0%;PCI Device: Intel Corporation 8 Series/C220 Series Chipset Family PCI Express Root Port #4
+ 71.3%;USB device: xHCI Host Controller
+ 70.6%;USB device: usb-device-8087-07da
+  0.2 pkts/s;Network interface: wlp8s0 (iwlwifi)
+  0.0%;runtime-coretemp.0
+  0.0%;runtime-PNP0C14:00
+  0.0%;USB device: usb-device-8087-8000
+  0.0%;USB device: EHCI Host Controller
+  0.0%;USB device: usb-device-8087-8008
+  0.0%;USB device: xHCI Host Controller
+  0.0%;USB device: EHCI Host Controller
+  0.0%;USB device: Lenovo EasyCamera (Generic)
+  0.0%;Audio codec hwC1D0: Realtek
+  0.0%;Audio codec hwC0D0: Intel
+  0.0 pkts/s;Network interface: enp7s0 (alx)
+  0.0%;PCI Device: Intel Corporation 8 Series/C220 Series Chipset Family SMBus Controller
+  0.0%;runtime-iTCO_wdt.0.auto
+  0.0%;runtime-alarmtimer
+  0.0%;runtime-reg-dummy
+  0.0%;runtime-PNP0C0D:00
+  0.0%;runtime-PNP0C09:00
+  0.0%;runtime-PNP0C0A:00
+  0.0%;runtime-ACPI0003:00
+  0.0%;runtime-eisa.0
+  0.0%;runtime-microcode
+  0.0%;runtime-intel_rapl_msr.0
+  0.0%;runtime-Fixed MDIO bus.0
+  0.0%;runtime-PNP0C0C:00
+  0.0%;runtime-INT0800:00
+  0.0%;runtime-efi-framebuffer.0
+  0.0%;runtime-regulatory.0
+  0.0%;runtime-i8042
+  0.0%;I2C Adapter (i2c-17): i915 gmbus dpb
+  0.0%;I2C Adapter (i2c-19): DPDDC-A
+  0.0%;I2C Adapter (i2c-1): nvkm-0000:01:00.0-bus-0000
+  0.0%;I2C Adapter (i2c-10): nvkm-0000:01:00.0-aux-000b
+  0.0%;I2C Adapter (i2c-3): nvkm-0000:01:00.0-bus-0002
+  0.0%;runtime-intel-spi
+  0.0%;runtime-pcspkr
+  0.0%;runtime-VPC2004:00
+  0.0%;I2C Adapter (i2c-5): nvkm-0000:01:00.0-bus-0006
+  0.0%;runtime-serial8250
+  0.0%;runtime-PNP0C04:00
+  0.0%;runtime-PNP0103:00
+  0.0%;runtime-PNP0C0E:00
+  0.0%;I2C Adapter (i2c-13): i915 gmbus ssc
+  0.0%;I2C Adapter (i2c-8): nvkm-0000:01:00.0-bus-0009
+  0.0%;I2C Adapter (i2c-15): i915 gmbus panel
+  0.0%;I2C Adapter (i2c-14): i915 gmbus vga
+  0.0%;I2C Adapter (i2c-7): nvkm-0000:01:00.0-bus-0008
+  0.0%;I2C Adapter (i2c-16): i915 gmbus dpc
+  0.0%;I2C Adapter (i2c-9): nvkm-0000:01:00.0-aux-000a
+  0.0%;I2C Adapter (i2c-18): i915 gmbus dpd
+  0.0%;I2C Adapter (i2c-0): SMBus I801 adapter at 5040
+  0.0%;I2C Adapter (i2c-2): nvkm-0000:01:00.0-bus-0001
+  0.0%;I2C Adapter (i2c-6): nvkm-0000:01:00.0-bus-0007
+  0.0%;I2C Adapter (i2c-11): nvkm-0000:01:00.0-aux-000c
+  0.0%;I2C Adapter (i2c-12): nvkm-0000:01:00.0-aux-000d
+  0.0%;I2C Adapter (i2c-4): nvkm-0000:01:00.0-bus-0005
+____________________________________________________________________
+ *  *  *   Process Device Activity   *  *  *
+
+Process;Device
+systemd;/dev/autofs
+;/dev/kmsg
+;/dev/rfkill
+systemd-journal;/dev/kmsg
+;/dev/kmsg
+acpid;/dev/input/event0
+;/dev/input/event1
+;/dev/input/event10
+;/dev/input/event11
+;/dev/input/event12
+;/dev/input/event13
+;/dev/input/event14
+;/dev/input/event15
+;/dev/input/event2
+;/dev/input/event3
+;/dev/input/event4
+;/dev/input/event6
+;/dev/input/event7
+;/dev/input/event8
+;/dev/input/event9
+bluetoothd;/dev/rfkill
+wpa_supplicant;/dev/rfkill
+systemd-logind;/dev/input/event0
+;/dev/input/event1
+;/dev/input/event2
+;/dev/input/event3
+;/dev/input/event4
+Xorg;/dev/dri/card0
+;/dev/dri/card0
+;/dev/dri/card0
+;/dev/dri/card0
+;/dev/dri/card1
+;/dev/dri/card1
+;/dev/input/event0
+;/dev/input/event1
+;/dev/input/event16
+;/dev/input/event3
+;/dev/input/event4
+;/dev/input/event5
+;/dev/input/event6
+;/dev/input/event7
+;/dev/input/event8
+;/dev/vga_arbiter
+upowerd;/dev/input/event2
+pulseaudio;/dev/snd/controlC0
+;/dev/snd/controlC1
+;/dev/snd/controlC1
+;/dev/snd/controlC1
+gvfsd-fuse;/dev/fuse
+gsd-rfkill;/dev/rfkill
+;/dev/rfkill
+budgie-wm;/dev/dri/card1
+
+____________________________________________________________________
+ *  *  *   AHCI ALPM Residency Statistics - Not supported on this macine   *  *  *
+
+____________________________________________________________________
+ *  *  *   Software Settings in Need of Tuning   *  *  *
+
+Description;Script
+VM writeback timeout;echo '1500' > '/proc/sys/vm/dirty_writeback_centisecs';
+Enable SATA link power management for host5;echo 'min_power' > '/sys/class/scsi_host/host5/link_power_management_policy';
+Enable SATA link power management for host3;echo 'min_power' > '/sys/class/scsi_host/host3/link_power_management_policy';
+Enable SATA link power management for host1;echo 'min_power' > '/sys/class/scsi_host/host1/link_power_management_policy';
+Enable SATA link power management for host4;echo 'min_power' > '/sys/class/scsi_host/host4/link_power_management_policy';
+Enable SATA link power management for host2;echo 'min_power' > '/sys/class/scsi_host/host2/link_power_management_policy';
+Enable SATA link power management for host0;echo 'min_power' > '/sys/class/scsi_host/host0/link_power_management_policy';
+NMI watchdog should be turned off;echo '0' > '/proc/sys/kernel/nmi_watchdog';
+Runtime PM for I2C Adapter i2c-14 (i915 gmbus vga);echo 'auto' > '/sys/bus/i2c/devices/i2c-14/device/power/control';
+Runtime PM for I2C Adapter i2c-15 (i915 gmbus panel);echo 'auto' > '/sys/bus/i2c/devices/i2c-15/device/power/control';
+Runtime PM for I2C Adapter i2c-13 (i915 gmbus ssc);echo 'auto' > '/sys/bus/i2c/devices/i2c-13/device/power/control';
+Runtime PM for I2C Adapter i2c-16 (i915 gmbus dpc);echo 'auto' > '/sys/bus/i2c/devices/i2c-16/device/power/control';
+Runtime PM for I2C Adapter i2c-17 (i915 gmbus dpb);echo 'auto' > '/sys/bus/i2c/devices/i2c-17/device/power/control';
+Runtime PM for I2C Adapter i2c-18 (i915 gmbus dpd);echo 'auto' > '/sys/bus/i2c/devices/i2c-18/device/power/control';
+Runtime PM for PCI Device Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode];echo 'auto' > '/sys/bus/pci/devices/0000:00:1f.2/power/control';
+Runtime PM for PCI Device Intel Corporation 8 Series/C220 Series Chipset Family PCI Express Root Port #4;echo 'auto' > '/sys/bus/pci/devices/0000:00:1c.0/power/control';
+Runtime PM for PCI Device Intel Corporation HM86 Express LPC Controller;echo 'auto' > '/sys/bus/pci/devices/0000:00:1f.0/power/control';
+Runtime PM for PCI Device Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor PCI Express x16 Controller;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.0/power/control';
+Runtime PM for PCI Device Intel Corporation Centrino Wireless-N 2230;echo 'auto' > '/sys/bus/pci/devices/0000:08:00.0/power/control';
+Runtime PM for PCI Device Intel Corporation 8 Series/C220 Series Chipset Family MEI Controller #1;echo 'auto' > '/sys/bus/pci/devices/0000:00:16.0/power/control';
+Runtime PM for PCI Device Intel Corporation 8 Series/C220 Series Chipset High Definition Audio Controller;echo 'auto' > '/sys/bus/pci/devices/0000:00:1b.0/power/control';
+Runtime PM for PCI Device Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor DRAM Controller;echo 'auto' > '/sys/bus/pci/devices/0000:00:00.0/power/control';
+Runtime PM for PCI Device Intel Corporation 8 Series/C220 Series Chipset Family USB EHCI #1;echo 'auto' > '/sys/bus/pci/devices/0000:00:1d.0/power/control';
+Runtime PM for PCI Device Intel Corporation 8 Series/C220 Series Chipset Family USB EHCI #2;echo 'auto' > '/sys/bus/pci/devices/0000:00:1a.0/power/control';
+Runtime PM for PCI Device Intel Corporation 8 Series/C220 Series Chipset Family PCI Express Root Port #5;echo 'auto' > '/sys/bus/pci/devices/0000:00:1c.4/power/control';
+Runtime PM for PCI Device Intel Corporation 4th Gen Core Processor Integrated Graphics Controller;echo 'auto' > '/sys/bus/pci/devices/0000:00:02.0/power/control';
+Runtime PM for PCI Device Intel Corporation 8 Series/C220 Series Chipset Family USB xHCI;echo 'auto' > '/sys/bus/pci/devices/0000:00:14.0/power/control';
+Runtime PM for PCI Device Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor HD Audio Controller;echo 'auto' > '/sys/bus/pci/devices/0000:00:03.0/power/control';
+Runtime PM for PCI Device Qualcomm Atheros QCA8171 Gigabit Ethernet;echo 'auto' > '/sys/bus/pci/devices/0000:07:00.0/power/control';
+____________________________________________________________________
+ *  *  *   Untunable Software Issues   *  *  *
+
+Description
+I2C Adapter i2c-19 has no runtime power management
+____________________________________________________________________
+ *  *  *   Optimal Tuned Software Settings   *  *  *
+
+Description
+Enable Audio codec power management
+Bluetooth device interface status
+Autosuspend for USB device xHCI Host Controller [usb3]
+Runtime PM for I2C Adapter i2c-8 (nvkm-0000:01:00.0-bus-0009)
+Runtime PM for I2C Adapter i2c-9 (nvkm-0000:01:00.0-aux-000a)
+Autosuspend for unknown USB device 3-7 (8087:07da)
+Runtime PM for I2C Adapter i2c-1 (nvkm-0000:01:00.0-bus-0000)
+Runtime PM for I2C Adapter i2c-10 (nvkm-0000:01:00.0-aux-000b)
+Runtime PM for I2C Adapter i2c-2 (nvkm-0000:01:00.0-bus-0001)
+Runtime PM for I2C Adapter i2c-3 (nvkm-0000:01:00.0-bus-0002)
+Autosuspend for USB device EHCI Host Controller [usb2]
+Autosuspend for USB device xHCI Host Controller [usb4]
+Autosuspend for USB device Lenovo EasyCamera [Generic]
+Runtime PM for I2C Adapter i2c-7 (nvkm-0000:01:00.0-bus-0008)
+Autosuspend for unknown USB device 2-1 (8087:8000)
+Autosuspend for USB device EHCI Host Controller [usb1]
+Runtime PM for I2C Adapter i2c-0 (SMBus I801 adapter at 5040)
+Runtime PM for I2C Adapter i2c-11 (nvkm-0000:01:00.0-aux-000c)
+Runtime PM for I2C Adapter i2c-4 (nvkm-0000:01:00.0-bus-0005)
+Autosuspend for unknown USB device 1-1 (8087:8008)
+Runtime PM for I2C Adapter i2c-12 (nvkm-0000:01:00.0-aux-000d)
+Runtime PM for I2C Adapter i2c-5 (nvkm-0000:01:00.0-bus-0006)
+Runtime PM for I2C Adapter i2c-6 (nvkm-0000:01:00.0-bus-0007)
+Runtime PM for PCI Device NVIDIA Corporation GK107 HDMI Audio Controller
+Runtime PM for PCI Device Intel Corporation 8 Series/C220 Series Chipset Family SMBus Controller
+Runtime PM for PCI Device NVIDIA Corporation GK107M [GeForce GT 755M]
+Wake-on-lan status for device enp7s0
+Wake-on-lan status for device wlp8s0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
