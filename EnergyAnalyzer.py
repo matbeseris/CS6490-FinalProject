@@ -2,9 +2,7 @@
 # and analyize their power consumption, comparing and printing results
 import sys
 import os
-from KeyExchanges import DHERSA, DHAPSK
-from CipherMethods import AES, ChaCha20
-
+import subprocess
 
 def main():
     if(len(sys.argv) == 1):
@@ -18,9 +16,12 @@ def main():
         os.system("sudo ./analyzeEnergy.sh " + sys.argv[i])
         # Filtered output is in energytime.txt
         f = open("energyTime.txt")
-        str = f.read()
-        str = str.split(" ms/s")[0]
-        msOutput.append(str)
+        str = f.readline()
+        values = str.split(";")
+        if len(values) == 0:
+            msOutput.appen("")
+        else:
+            msOutput.append(values[0] + values[-1])
         i+=1
     
     
@@ -29,7 +30,7 @@ def main():
     print("*** Result energy ratings (higher = more energy used) *** ")
     while(i < len(msOutput)):
         print(sys.argv[i+1] + ":\t " + msOutput[i])
-	i+=1
+        i+=1
     
 
 if __name__ == '__main__':
