@@ -20,7 +20,7 @@ def main():
         values = str.split(";")
         if len(values) == 0:
             msOutput.append("")
-        elif len(value) == 7:
+        elif len(values) == 7:
             msOutput.append(values[6] + "\t" + values[0] + "\t" + values[-1])
         else:
             msOutput.append(values[6] + "\t" + values[0])
