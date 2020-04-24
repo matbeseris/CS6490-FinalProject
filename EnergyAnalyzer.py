@@ -17,13 +17,17 @@ def main():
         # Filtered output is in energytime.txt
         f = open("energyTime.txt")
         str = f.read()
-        values = str.rstrip("\n").split(";")
-        if len(values) == 0:
+        lines = str.split("\n")
+        values1 = lines[0].split(";")
+        values2 = lines[1].split(";")
+        if len(values1) == 0:
             msOutput.append("")
-        elif len(values) == 8:
-            msOutput.append(values[6] + "\t" + values[0] + "\t" + values[-1])
+        elif len(values1) == 8:
+            msOutput.append(values1[6] + "\t" + values1[0] + "\t" + values1[-1] \
+                            + "\n" + values2[6] + "\t" + values2[0] + "\t" + values2[-1])
         else:
-            msOutput.append(values[6] + "\t" + values[0])
+            msOutput.append(values1[6] + "\t" + values1[0] \
+                            + "\n" + values2[6] + "\t" + values2[0])
         i+=1
     
     
