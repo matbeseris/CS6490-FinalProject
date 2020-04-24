@@ -16,8 +16,8 @@ def main():
         os.system("sudo ./analyzeEnergy.sh " + sys.argv[i])
         # Filtered output is in energytime.txt
         f = open("energyTime.txt")
-        str = f.readline()
-        values = str.split(";")
+        str = f.read()
+        values = str.rstrip("\n").split(";")
         if len(values) == 0:
             msOutput.append("")
         elif len(values) == 8:
