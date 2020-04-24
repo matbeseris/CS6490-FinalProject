@@ -21,7 +21,7 @@ def main():
         if len(values) == 0:
             msOutput.appen("")
         else:
-            msOutput.append(values[0] + values[-1])
+            msOutput.append(values[7] + "\t" + values[0] + "\t" + values[-1])
         i+=1
     
     
