@@ -19,9 +19,11 @@ def main():
         str = f.readline()
         values = str.split(";")
         if len(values) == 0:
-            msOutput.appen("")
+            msOutput.append("")
+        else if len(value) == 7:
+            msOutput.append(values[6] + "\t" + values[0] + "\t" + values[-1])
         else:
-            msOutput.append(values[7] + "\t" + values[0] + "\t" + values[-1])
+            msOutput.append(values[6] + "\t" + values[0])
         i+=1
     
     

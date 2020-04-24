@@ -9,7 +9,7 @@ from helpers import *
 bluetoothMAC = "00:C2:C6:6F:B6:15"
 port = 20 # any port that is available
 
-print(os.getpid())
+print("PID: " + str(os.getpid()))
 
 ######
 # Create a Bluetooth server at the MAC, port and return the listening socket

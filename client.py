@@ -9,7 +9,7 @@ from helpers import *
 serverBluetoothMAC = "00:C2:C6:6F:B6:15"
 port = 20
 
-print(os.getpid())
+print("PID: " + str(os.getpid()))
 
 #####
 # Create a Bluetooth socket and wrap in an SSL connection
