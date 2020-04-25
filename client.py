@@ -1,5 +1,6 @@
 import socket
 import ssl
+import os
 
 from CipherSuites import *
 from helpers import *
@@ -7,6 +8,8 @@ from helpers import *
 # Bluetooth server information
 serverBluetoothMAC = "00:C2:C6:6F:B6:15"
 port = 20
+
+print("PID: " + str(os.getpid()))
 
 #####
 # Create a Bluetooth socket and wrap in an SSL connection

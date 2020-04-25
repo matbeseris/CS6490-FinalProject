@@ -9,6 +9,8 @@ from helpers import *
 bluetoothMAC = "00:C2:C6:6F:B6:15"
 port = 20 # any port that is available
 
+print("PID: " + str(os.getpid()))
+
 ######
 # Create a Bluetooth server at the MAC, port and return the listening socket
 ######
@@ -146,4 +148,4 @@ def startServer(mac, port, ciphers):
         bsock.close()
         
 if __name__ == "__main__":
-    startServer(bluetoothMAC, port, CipherSuites.ECDHERSA_AES256)
+    startServer(bluetoothMAC, port, CipherSuites.ECDHERSA_CHACHA20)

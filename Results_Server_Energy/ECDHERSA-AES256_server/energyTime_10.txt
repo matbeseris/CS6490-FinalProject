@@ -1,0 +1,2 @@
+629.1 us/s;  5.3;;;;Process;[PID 5771] powertop --workload=python3 server.py --csv=powerOut.csv ; 66.9 mW  
+  3.4 ms/s;  2.5;;;;Process;[PID 5798] python3; 31.6 mW  
